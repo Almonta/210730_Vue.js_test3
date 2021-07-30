@@ -29,6 +29,12 @@ class ToDosController < ApplicationController
     end
   end
 
+  def destroy
+    @to_do = ToDo.find_by(id: params[:id])
+    @to_do.destroy
+    redirect_to to_dos_url
+  end
+
   private
 
   def to_do_params
