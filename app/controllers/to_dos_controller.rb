@@ -6,7 +6,11 @@ class ToDosController < ApplicationController
   def new
     @to_do = ToDo.new
   end
-  
+
+  def edit
+    @to_do = ToDo.find_by(id: params[:id])
+  end
+
   def create
     @to_do = ToDo.new(to_do_params)
     if @to_do.save
@@ -15,4 +19,11 @@ class ToDosController < ApplicationController
       render :new
     end
   end
+
+  private
+
+  def to_do_params
+    params.require(:to_do).permit(:title)
+  end
+
 end
