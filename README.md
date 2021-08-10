@@ -24,6 +24,9 @@ Things you may want to cover:
 * ...
 
 
+
+issue1
+
 git branch develop
 
 git checkout develop
@@ -31,5 +34,6 @@ git checkout develop
 git push origin develop
 
 developブランチで
+
 
 
