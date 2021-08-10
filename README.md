@@ -36,4 +36,5 @@ git push origin develop
 developブランチで
 
 
+developで編集
 
