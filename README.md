@@ -22,3 +22,18 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+
+issue1
+
+git branch develop
+
+git checkout develop
+
+git push origin develop
+
+developブランチで
+
+
+
